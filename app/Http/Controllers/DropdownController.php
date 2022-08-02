@@ -32,6 +32,7 @@ class DropdownController extends Controller
             'division' => 'required|max:20',
             'district' => 'required|max:20',
             'upazila' => 'required|max:20',
+            'file' => 'required',
         ]);
         // $data = array(
         //     'division-dd' => $request ->input('division'),
@@ -50,25 +51,28 @@ class DropdownController extends Controller
         $sdistrict = Str::upper(Str::substr($district->name, 0, 3));
         $supazila = Str::upper(Str::substr($upazila->name, 0, 3));
 
-            $slug = $sdivision.'_'.$sdistrict.'_'.$supazila;
+        $slug = $sdivision.'_'.$sdistrict.'_'.$supazila;
+        $path = $division->name.'/'.$district->name.'/'.$upazila->name.'/';
+        
+
+        // dd($file);
+        $file = time(). $request->file('file')->getClientOriginalName();             
+        
+        $store = $request->file('file')->storeAs($path, $file);
+           
         // dd($division_id);
 
         switch ($division_id) {
             case '1':
-                $sylhet = Storage::put('/Sylhet/'.$division->name, $slug);
-                return $sylhet;
+                // $sylhet = Storage::put($path, $file);
+                return $store;
                 break;
             case '2':
-                $dhaka = Storage::put('Dhaka', $slug);
-                return $dhaka;
+                return $store;
                 break;
             case '3':
-                $khulna = Storage::put('Khulna', $slug);
-                return $khulna;
+                return $store;
                 break;
-            
-            
         }
-        // return response()->json($slug);
     }
 }

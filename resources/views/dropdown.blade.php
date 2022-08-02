@@ -14,7 +14,7 @@
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <h2 class="mb-4">Laravel AJAX Dependent Country State City Dropdown Example</h2>
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group mb-3">
                         <select  id="division-dd" name="division" class="form-control">
@@ -33,6 +33,10 @@
                     <div class="form-group">
                         <select id="upazila-dd" name="upazila" class="form-control">
                         </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="file" name="file" id="file">
                     </div>
                     <br>
                     <div class="form-group">

@@ -111,6 +111,114 @@ class UpazilaSeeder extends Seeder
             'district_id' => '4',
             'created_at' => new DateTime(),
             'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Dhamrai',
+            'district_id' => '5',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Dohar',
+            'district_id' => '5',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Keraniganj',
+            'district_id' => '5',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Kapasia',
+            'district_id' => '6',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Sreepur',
+            'district_id' => '6',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Kaliganj',
+            'district_id' => '6',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Sakhipur',
+            'district_id' => '7',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Basail',
+            'district_id' => '7',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Madhupur',
+            'district_id' => '7',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Fakirhat',
+            'district_id' => '8',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Mollahat',
+            'district_id' => '8',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Rampal',
+            'district_id' => '8',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Abhaynagar',
+            'district_id' => '9',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Bagherpara',
+            'district_id' => '9',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Chaugachha',
+            'district_id' => '9',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Assasuni',
+            'district_id' => '10',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Debhata',
+            'district_id' => '10',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
+        ],
+        [
+            'name' => 'Tala',
+            'district_id' => '10',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime()
         ],]);
     }
 }
