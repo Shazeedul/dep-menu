@@ -56,15 +56,17 @@ class DropdownController extends Controller
         
 
         // dd($file);
-        $file = time(). $request->file('file')->getClientOriginalName();             
+        // $file = time(). $request->file('file')->getClientOriginalName();
+        $file = $request->file('file');          
         
-        $store = $request->file('file')->storeAs($path, $file);
+        // $store = $request->file('file')->storeAs($path, $file);
+
+        $store = Storage::put($path, $file);
            
         // dd($division_id);
 
         switch ($division_id) {
             case '1':
-                // $sylhet = Storage::put($path, $file);
                 return $store;
                 break;
             case '2':
