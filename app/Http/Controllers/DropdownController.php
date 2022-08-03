@@ -59,21 +59,21 @@ class DropdownController extends Controller
         // $file = time(). $request->file('file')->getClientOriginalName();
         $file = $request->file('file');          
         
-        // $store = $request->file('file')->storeAs($path, $file);
+        $store = $request->file('file')->storeAs($path, $file);
 
-        $store = Storage::put($path, $file);
+        // $store = Storage::put($path, $file);
            
         // dd($division_id);
 
         switch ($division_id) {
             case '1':
-                return $store;
+                return redirect()->back();
                 break;
             case '2':
-                return $store;
+                return redirect()->back();
                 break;
             case '3':
-                return $store;
+                return redirect()->back();
                 break;
         }
     }
